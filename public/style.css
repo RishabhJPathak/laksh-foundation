@@ -1,3 +1,24 @@
-.banner {
-  width: 100vw;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --banner-height: 13vh;
+}
+
+.img-bg {
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  width: auto;
+  min-width: 100px;
+  background-position: center;
+  height: var(--banner-height);
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 420px) {
+  :root {
+    --banner-height: 10vh;
+  }
 }
