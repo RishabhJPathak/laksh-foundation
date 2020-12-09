@@ -1,16 +1,31 @@
 extends layout
 
 block content
-  h5.text-center Contact US
-  .d-flex.flex-column
-    .contact-details
-      span.iconify(data-icon="codicon:call-outgoing" data-inline="false" style="color: #1A58C7;" data-width="20px" data-height="20px")
-      a.ms-2.contact-link(href='tel:+919702889702' title='Phone Number' target='_blank') +91 97028 89702
-    .contact-details
-      span.iconify(data-icon="la:facebook-messenger" data-inline="false" style="color: #1A58C7;" data-width="20px" data-height="20px")
-      a.ms-2.contact-link(href='https://m.me/lakshfoundation0411' title='Messenger Contact' target='_blank') m.me/lakshfoundation0411
-    .contact-details
-      span.iconify(data-icon="carbon:email" data-inline="false" style="color: #1A58C7;" data-width="20px" data-height="20px")
-      a.ms-2.contact-link(href='mailto:lakshfoundation0411@gmail.com' title='Email' target='_blank') lakshfoundation0411@gmail.com
+  .contact.row.mt-2
+    .col-lg-8.mb-4
+      .fs-4.fw-light Contact US
+      form(method="POST").py-4
+        .row
+          .col-md-4.p-3
+            input#name.form-field(type="text" placeholder="Name: Your Name" minLength="3" name="name" autofocus required)
+          .col-md-4.p-3
+            input#email.form-field(type="email" placeholder="Email: abc@mail.com" name="email" required)
+          .col-md-4.p-3
+            input#phone.form-field(type="tel" maxLength="10" placeholder="Phone: 1234567890" name="phone" pattern="[0-9]{10}" required)
+        .px-1
+          textarea#message.form-field(name="message", placeholder="Enter your Message here: " cols="30", rows="5" style="resize:none;")
+        .px-1
+          button.contact-form-submit.mt-2(type="submit") Send Message
+    .d-flex.flex-column.col-lg-4
+      .contact-details-heading Contact Details
+      .contact-details
+        span.iconify(data-icon="codicon:call-outgoing" data-inline="false" data-width="20px" data-height="20px")
+        a.ms-2.contact-link(href='tel:+919702889702' title='Phone Number' target='_blank') +91 97028 89702
+      .contact-details
+        span.iconify(data-icon="la:facebook-messenger" data-inline="false" data-width="20px" data-height="20px")
+        a.ms-2.contact-link(href='https://m.me/lakshfoundation0411' title='Messenger Contact' target='_blank') m.me/lakshfoundation0411
+      .contact-details
+        span.iconify(data-icon="carbon:email" data-inline="false" data-width="20px" data-height="20px")
+        a.ms-2.contact-link(href='mailto:lakshfoundation0411@gmail.com' title='Email' target='_blank') lakshfoundation0411@gmail.com
 
 
