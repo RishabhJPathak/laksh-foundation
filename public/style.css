@@ -7,6 +7,7 @@ body {
   --banner-height: 12vh;
 }
 
+/* Navbar */
 .img-bg {
   background-size: cover;
   background-repeat: no-repeat !important;
@@ -30,11 +31,52 @@ body {
   border-bottom: 1px solid black;
 }
 
+/* Contact Page */
+.form-field {
+  border: 1px solid cadetblue;
+  border-left: 6px solid cadetblue;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.form-field:focus {
+  border: 1px solid #0080ff;
+  border-left: 6px solid #0080ff;
+  background-color: azure;
+}
+
+.contact-form-submit {
+  width: 100%;
+  border: 1px solid cadetblue;
+  padding: 10px;
+  color: rgb(39, 38, 38);
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+  outline: none;
+}
+.contact-form-submit:hover,
+.contact-form-submit:focus {
+  outline: none;
+  border: 1px solid cadetblue;
+  background-color: cadetblue;
+  color: white;
+}
+
+.contact-details-heading {
+  font-weight: lighter;
+  font-size: 18px;
+  padding-left: 10px;
+  border-left: 6px solid gainsboro;
+  margin-bottom: 20px;
+}
+
 .contact-link {
   text-decoration: none;
-  color: #1a58c7;
+  color: black;
   transition: 0.5s ease-in-out;
 }
 .contact-link:hover {
   text-decoration: underline;
+  color: #0040ff;
 }
