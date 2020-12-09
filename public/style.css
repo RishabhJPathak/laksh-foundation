@@ -8,7 +8,6 @@ body {
 }
 
 .img-bg {
-  background-image: url('./images//logo.png');
   background-size: cover;
   background-repeat: no-repeat !important;
   width: auto;
@@ -23,9 +22,19 @@ body {
   border-bottom: 1px solid white;
 }
 .nav-link:hover {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid cadetblue;
 }
 
-.active {
+.active,
+.active:hover {
   border-bottom: 1px solid black;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #1a58c7;
+  transition: 0.5s ease-in-out;
+}
+.contact-link:hover {
+  text-decoration: underline;
 }
