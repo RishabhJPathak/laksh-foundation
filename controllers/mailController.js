@@ -9,8 +9,8 @@ exports.send = async (req, res) => {
       <body>
         <h1 style="width: 100%; text-align: center;">Laksh Foundation</h1>
         <div style="padding: 0 20%;margin-top: 20px">
-          <div style="z-index: -2; margin: 0 auto;">
-            <img src="cid:logo" width="100" height="90">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <img src="cid:logo" width="300" height="290">
           </div>
           <h3>Form Details: </h3>
           <p><strong>Name:</strong> ${name} </p>
