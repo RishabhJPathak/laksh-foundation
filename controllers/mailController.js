@@ -8,8 +8,8 @@ exports.send = async (req, res) => {
     <html>
       <body>
         <h1 style="width: 100%; text-align: center;">
-          <img src="cid:logo" width="80" height="70">
-          <span padding-bottom: 20px;>Laksh Foundation</span>
+          <img src="cid:logo" width="50" height="40">
+          <span style="padding-bottom: 20px;">Laksh Foundation</span>
         </h1>
         <div style="padding: 0 20%;margin-top: 20px">
           <h3>Form Details: </h3>
