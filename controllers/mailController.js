@@ -7,10 +7,10 @@ exports.send = async (req, res) => {
     const userHTML = `
     <html>
       <body>
-        <h1 style="width: 100%;text-align: center;display: flex;flex-direction: row; align-items: center;justify-content: center;">
+        <div style="width: 100%;text-align: center;display: flex;flex-direction: row; align-items: center;justify-content: center;">
           <img src="cid:logo" width="50" height="40">
-          Laksh Foundation
-        </h1>
+          <h1>Laksh Foundation</h1>
+        </div>
         <div style="padding: 0 20%;margin-top: 20px">
           <h3>Form Details: </h3>
           <p><strong>Name:</strong> ${name} </p>
